@@ -1,0 +1,31 @@
+@import url(https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css);
+
+.swiper {
+  display: block;
+  width: 500px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  width: calc(100% / 3);
+  height: 100%;
+  transition: width .3s ease;
+}
+
+.swiper-wrapper:hover .swiper-slide-visible:not(:hover) {
+  width: 25%;
+}
+
+.swiper-slide-visible:hover {
+  width: 50%;
+}
+
+.swiper-slide-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 20px);
+  height: 100%;
+  background: #ccc;
+}
